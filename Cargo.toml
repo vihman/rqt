@@ -1,0 +1,12 @@
+[package]
+name = "RustQT"
+version = "0.1.0"
+edition = '2024'
+
+[dependencies]
+cxx = "1.0.189"
+cxx-qt = "0.7.3"
+cxx-qt-lib = {version = "0.7.3", features = ["qt_full"] }
+
+[build-dependencies]
+cxx-qt-build = {version = "0.7.3", features = ["link_qt_object_files"]}
